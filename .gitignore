@@ -1,0 +1,19 @@
+# R / RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.RDataTmp
+.Ruserdata
+
+# Large intermediate data — regenerate with R/01_import.R
+data/*
+!data/.gitkeep
+
+# Quarto render leftovers
+/.quarto/
+*_files/
+*.html
+!docs/*.html
+
+# macOS
+.DS_Store

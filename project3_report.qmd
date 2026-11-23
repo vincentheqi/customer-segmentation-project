@@ -1,0 +1,54 @@
+---
+title: "Customer Segmentation, Retention Modeling, and Marketing Allocation"
+subtitle: "MATH 167R — Project 3"
+author: "Zhanxiang (Joe) He"
+date: today
+format:
+  html:
+    toc: true
+    code-fold: true
+    theme: cosmo
+    embed-resources: true
+    output-file: index.html
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(tidyverse)
+# The report reads only saved results in output/; the heavy lifting is in R/.
+```
+
+# 1. Executive summary
+
+_To be written last._
+
+# 2. Marketing strategy and $1 million budget allocation
+
+_Budget table and justification (Step 7)._
+
+# 3. Data and customer-level feature construction
+
+| Element | Definition |
+|---|---|
+| Unit of analysis | One household |
+| Observation period | Jan 1 – Sep 30, 2017 |
+| Holdout period | Oct 1 – Dec 31, 2017 |
+| Outcome | `retained = 1` if the household made at least one purchase in the holdout period |
+
+```{r}
+#| eval: false
+# Import code shown for reference; see R/01_import.R
+transactions <- completejourney::get_transactions()
+```
+
+# 4. PCA and customer-behavior dimensions
+
+# 5. K-means clustering and choice of k
+
+# 6. From clusters to business segments
+
+# 7. Logistic regression for future return
